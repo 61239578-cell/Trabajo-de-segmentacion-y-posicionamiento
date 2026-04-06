@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagitarius Lan Center | Tu Refugio Digital en Cusco</title>
+    <title>Sagitarius Lan Center | Cusco</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --neon-green: #00ff88;
@@ -13,50 +15,148 @@
             --card-bg: #161616;
         }
 
+        /* Fuerza a que el cuerpo no esté vacío y tenga color */
         body { 
-            font-family: 'Roboto', sans-serif; 
+            font-family: 'Roboto', Arial, sans-serif; 
             margin: 0; 
-            background: var(--dark-bg); 
-            color: #fff; 
-            scroll-behavior: smooth;
+            background-color: #0a0a0a; /* Color sólido de respaldo */
+            color: #ffffff; 
+            display: block !important; 
         }
 
-        h1, h2, h3 { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
-
-        /* --- NUEVA BARRA DE NAVEGACIÓN --- */
+        /* Navegación */
         nav {
-            background: rgba(0, 0, 0, 0.9);
-            border-bottom: 1px solid var(--neon-green);
-            padding: 15px 5%;
+            background: #000;
+            border-bottom: 2px solid var(--neon-green);
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            backdrop-filter: blur(10px);
         }
 
         .nav-logo {
-            font-family: 'Orbitron';
+            font-family: 'Orbitron', sans-serif;
             color: var(--neon-green);
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
         }
 
         .nav-links a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            font-family: 'Orbitron';
-            font-size: 0.85rem;
+            margin-left: 15px;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            transition: 0.3s;
-            letter-spacing: 1px;
         }
-        
+
+        /* Sección Hero */
+        .hero { 
+            padding: 80px 20px; 
+            text-align: center; 
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1, h2 { font-family: 'Orbitron', sans-serif; color: var(--neon-green); }
+
+        /* Cuadrícula de Servicios */
+        .services { 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; 
+            padding: 40px 20px; 
+        }
+
+        .service-card { 
+            background: var(--card-bg); 
+            padding: 20px; 
+            border-radius: 10px; 
+            border: 1px solid #333;
+            width: 280px;
+            text-align: center;
+        }
+
+        .btn-reserva { 
+            background: var(--neon-green); 
+            color: #000; 
+            padding: 15px 30px; 
+            border: none; 
+            border-radius: 30px; 
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Galería */
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .image-gallery img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer { padding: 30px; text-align: center; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">SAGITARIUS</a>
+        <div class="nav-links">
+            <a href="maquinas.html">Máquinas</a>
+            <a href="juegos.html">Juegos</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Sagitarius Lan Center</h1>
+        <p>Tu Refugio Digital en Cusco - Frente a la UNSAAC</p>
+        <br>
+        <a href="https://wa.me/51984123456" class="btn-reserva">RESERVAR PC</a>
+    </header>
+
+    <section class="services">
+        <div class="service-card">
+            <h3>🎮 Gaming</h3>
+            <p>S/ 1.20 la hora. PCs de alto rendimiento.</p>
+            <a href="maquinas.html" style="color: var(--neon-green);">Ver más →</a>
+        </div>
+        <div class="service-card">
+            <h3>🕹️ Juegos</h3>
+            <p>Dota 2, LoL, Valorant y más.</p>
+            <a href="juegos.html" style="color: var(--neon-green);">Catálogo →</a>
+        </div>
+        <div class="service-card">
+            <h3>💰 Agente</h3>
+            <p>KasNet y BiPay. Pagos y recargas.</p>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">Nuestra Vibra</h2>
+    <div class="image-gallery">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" alt="Gamer">
+        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575" alt="Setup">
+        <img src="https://images.unsplash.com/photo-1605897472359-85e4b9482223" alt="Lan">
+    </div>
+
+    <footer>
+        <p>© 2026 Sagitarius Lan Center - Cusco</p>
+        <p>Fundado por Alfredo Curasi</p>
+    </footer>
+
+</body>
+</html>
