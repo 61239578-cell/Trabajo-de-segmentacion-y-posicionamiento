@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potencia Sagitarius | Hardware</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon-green: #00ff88; --dark-bg: #050505; }
+        body { font-family: 'Roboto', sans-serif; background: var(--dark-bg); color: white; margin: 0; }
+        h1, h2 { font-family: 'Orbitron'; text-align: center; color: var(--neon-green); }
+        .container { max-width: 1000px; margin: auto; padding: 50px 20px; }
+        
+        .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .spec-card { background: #111; padding: 25px; border-radius: 15px; border-left: 4px solid var(--neon-green); }
+        .spec-card h3 { color: var(--neon-green); margin-top: 0; }
+        .component-list { list-style: none; padding: 0; font-size: 0.9rem; line-height: 2; }
+        .component-list li b { color: #888; text-transform: uppercase; font-size: 0.7rem; margin-right: 10px; }
+
+        .back-btn { display: inline-block; margin-bottom: 20px; color: var(--neon-green); text-decoration: none; border: 1px solid var(--neon-green); padding: 10px 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Volver al Inicio</a>
+        <h1>Nuestra Armería</h1>
+        <p style="text-align: center; opacity: 0.7;">Equipos optimizados para baja latencia y altos FPS.</p>
+
+        <div class="spec-grid">
+            <div class="spec-card">
+                <h3>🖥️ Estación Gamer Pro</h3>
+                <ul class="component-list">
+                    <li><b>Procesador:</b> Intel Core i5 / Ryzen 5 (Última Gen)</li>
+                    <li><b>Gráficos:</b> NVIDIA GeForce RTX Series</li>
+                    <li><b>Memoria:</b> 16GB RAM DDR4 3200MHz</li>
+                    <li><b>Almacenamiento:</b> SSD NVMe para carga instantánea</li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3>🖱️ Periféricos</h3>
+                <ul class="component-list">
+                    <li><b>Monitor:</b> 144Hz / 1ms respuesta</li>
+                    <li><b>Teclado:</b> Mecánico RGB Anti-ghosting</li>
+                    <li><b>Mouse:</b> Gaming ajustable DPI</li>
+                    <li><b>Headset:</b> Sonido Surround 7.1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
