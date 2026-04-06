@@ -3,56 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagittarus Lan Center - Cusco | Gaming, Internet & Impresiones</title>
+    <title>Sagitarius Lan Center | Tu Refugio Digital en Cusco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #000; color: #fff; }
-        header { background: linear-gradient(135deg, #00ff88, #0080ff); padding: 20px; text-align: center; }
-        .hero { padding: 50px 20px; text-align: center; background: #111; }
-        .services { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 40px 20px; }
-        .service { background: #222; padding: 20px; margin: 10px; border-radius: 10px; width: 300px; }
-        .prices { background: #00ff88; color: #000; padding: 40px; text-align: center; }
-        .contact { padding: 40px 20px; text-align: center; }
-        .map { height: 300px; margin-top: 20px; }
-        button { background: #ff4081; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; }
-        footer { background: #111; padding: 20px; text-align: center; }
-        @media (max-width: 768px) { .services { flex-direction: column; align-items: center; } }
+        :root {
+            --neon-green: #00ff88;
+            --electric-blue: #0080ff;
+            --dark-bg: #0a0a0a;
+            --card-bg: #161616;
+        }
+
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0; 
+            background: var(--dark-bg); 
+            color: #fff; 
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo Gamer / Futurista */
+        h1, h2, h3 { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+
+        header { 
+            background: linear-gradient(135deg, rgba(0,255,136,0.1), rgba(0,128,255,0.1));
+            padding: 40px 20px; 
+            text-align: center; 
+            border-bottom: 2px solid var(--neon-green);
+        }
+
+        .hero { 
+            position: relative;
+            padding: 100px 20px; 
+            text-align: center; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200'); /* Imagen de gaming */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .services { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            padding: 60px 5%; 
+        }
+
+        .service-card { 
+            background: var(--card-bg); 
+            padding: 30px; 
+            border-radius: 15px; 
+            border: 1px solid #333;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover { 
+            border-color: var(--neon-green); 
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,255,136,0.2);
+        }
+
+        .highlight-box { 
+            background: linear-gradient(90deg, var(--neon-green), var(--electric-blue)); 
+            color: #000; 
+            padding: 50px 20px; 
+            text-align: center; 
+            font-weight: bold;
+        }
+
+        .image-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 40px 5%;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            filter: grayscale(30%);
+            transition: 0.5s;
+        }
+
+        .image-gallery img:hover { filter: grayscale(0%); scale: 1.05; }
+
+        button { 
+            background: var(--neon-green); 
+            color: #000; 
+            padding: 18px 35px; 
+            border: none; 
+            border-radius: 50px; 
+            font-weight: bold;
+            font-size: 16px; 
+            cursor: pointer; 
+            transition: 0.3s;
+        }
+
+        button:hover { background: #fff; box-shadow: 0 0 20px var(--neon-green); }
+
+        .map-container { padding: 40px 5%; text-align: center; }
+        iframe { width: 100%; max-width: 900px; border-radius: 15px; border: 2px solid #333; }
+
+        footer { padding: 40px; text-align: center; background: #000; border-top: 1px solid #222; opacity: 0.7; }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>🌌 Sagittarus Lan Center</h1>
-        <p>Frente a UNSSAC, Cusco - Tu espacio gamer y digital #1</p>
+        <h1>Sagitarius Lan Center</h1>
+        <p>Más que una cabina, un Refugio Digital en el corazón de Cusco</p>
     </header>
+
     <section class="hero">
-        <h2>Todo lo que necesitas en un solo lugar: Rápido, Cómodo y Accesible</h2>
-        <button onclick="alert('¡Reserva ahora! WhatsApp: +51 XXX XXX XXX')">Reserva tu PC Ahora</button>
+        <h2>Confort, Velocidad y Resolución</h2>
+        <p style="max-width: 600px; margin: 20px auto; opacity: 0.9;">
+            Equipos de última generación para tus maratones de Dota, Fortnite o Valorant frente a la UNSAAC. [cite: 37]
+        </p>
+        <button onclick="window.open('https://wa.me/51984123456')">Reserva tu PC Gamer</button>
     </section>
+
     <section class="services">
-        <div class="service">
-            <h3>🎮 Gaming Pro</h3>
-            <p>PCs potentes, internet 500Mbps, torneos semanales.</p>
+        <div class="service-card">
+            <h3>🎮 Ecosistema Gaming</h3>
+            <p>PCs potentes, maratones online y el mejor ambiente competitivo de la ciudad. [cite: 9]</p>
+            <p><strong>S/ 1.20 x Hora</strong></p>
         </div>
-        <div class="service">
-            <h3>🖨️ Impresiones Rápidas</h3>
-            <p>Color/BN, trabajos universitarios en minutos.</p>
+        <div class="service-card">
+            <h3>📄 Productividad</h3>
+            <p>Impresiones láser (B/N y Color), escaneos y elaboración de trabajos digitales urgentes. [cite: 11]</p>
+            <p><strong>Desde S/ 0.20</strong></p>
         </div>
-        <div class="service">
-            <h3>🌐 Internet & Servicios</h3>
-            <p>Trámites, kiosco, scanning. Precios estudiantes.</p>
+        <div class="service-card">
+            <h3>💰 Servicios Financieros</h3>
+            <p>Agente KasNet y BiPay. Recargas, transferencias y pagos de servicios sin colas. [cite: 5, 11]</p>
         </div>
     </section>
-    <section class="prices">
-        <h2>Precios Accesibles</h2>
-        <p>Hora básica: S/2 | Combo 5h: S/8 | Impresión: S/0.50</p>
-        <button>Ver Promos</button>
+
+    <div class="highlight-box">
+        <h2>🚀 Promoción Actual: Combo Gamer</h2>
+        <p>Disfruta de la mejor velocidad de internet en Cusco a precios de estudiante.</p>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 50px;">Nuestra Vibra Local</h2>
+    <div class="image-gallery">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" alt="Gamer jugando">
+        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575" alt="Setup Lan Center">
+        <img src="https://images.unsplash.com/photo-1605897472359-85e4b9482223" alt="Competencia">
+    </div>
+
+    <section class="map-container">
+        <h2>Ubícanos</h2>
+        <p>A una cuadra de la UNSAAC - Zona de alto tránsito estudiantil [cite: 4, 65]</p>
+        <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.123456789!2d-71.95!3d-13.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916e7f0!2sUNSAAC!5e0!3m2!1ses!2spe!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
     </section>
-    <section class="contact">
-        <h2>¡Ven ya! Una cuadra de UNSSAC</h2>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5...[Cusco UNSSAC]" allowfullscreen="" loading="lazy"></iframe>
-        <p>Abierto 24/7 | WhatsApp: +51 984 123 456</p>
-    </section>
+
     <footer>
-        <p>&copy; 2026 Sagittarus Lan Center. Todo en un solo lugar.</p>
+        <p>© 2026 Sagitarius Lan Center - Cusco. [cite: 50, 70]</p>
+        <p>Fundado por Alfredo Curasi | Calidad, Rapidez y Variedad. [cite: 55, 73]</p>
     </footer>
+
 </body>
 </html>
