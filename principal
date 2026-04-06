@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagittarus Lan Center - Cusco | Gaming, Internet & Impresiones</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #000; color: #fff; }
+        header { background: linear-gradient(135deg, #00ff88, #0080ff); padding: 20px; text-align: center; }
+        .hero { padding: 50px 20px; text-align: center; background: #111; }
+        .services { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 40px 20px; }
+        .service { background: #222; padding: 20px; margin: 10px; border-radius: 10px; width: 300px; }
+        .prices { background: #00ff88; color: #000; padding: 40px; text-align: center; }
+        .contact { padding: 40px 20px; text-align: center; }
+        .map { height: 300px; margin-top: 20px; }
+        button { background: #ff4081; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; }
+        footer { background: #111; padding: 20px; text-align: center; }
+        @media (max-width: 768px) { .services { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌌 Sagittarus Lan Center</h1>
+        <p>Frente a UNSSAC, Cusco - Tu espacio gamer y digital #1</p>
+    </header>
+    <section class="hero">
+        <h2>Todo lo que necesitas en un solo lugar: Rápido, Cómodo y Accesible</h2>
+        <button onclick="alert('¡Reserva ahora! WhatsApp: +51 XXX XXX XXX')">Reserva tu PC Ahora</button>
+    </section>
+    <section class="services">
+        <div class="service">
+            <h3>🎮 Gaming Pro</h3>
+            <p>PCs potentes, internet 500Mbps, torneos semanales.</p>
+        </div>
+        <div class="service">
+            <h3>🖨️ Impresiones Rápidas</h3>
+            <p>Color/BN, trabajos universitarios en minutos.</p>
+        </div>
+        <div class="service">
+            <h3>🌐 Internet & Servicios</h3>
+            <p>Trámites, kiosco, scanning. Precios estudiantes.</p>
+        </div>
+    </section>
+    <section class="prices">
+        <h2>Precios Accesibles</h2>
+        <p>Hora básica: S/2 | Combo 5h: S/8 | Impresión: S/0.50</p>
+        <button>Ver Promos</button>
+    </section>
+    <section class="contact">
+        <h2>¡Ven ya! Una cuadra de UNSSAC</h2>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5...[Cusco UNSSAC]" allowfullscreen="" loading="lazy"></iframe>
+        <p>Abierto 24/7 | WhatsApp: +51 984 123 456</p>
+    </section>
+    <footer>
+        <p>&copy; 2026 Sagittarus Lan Center. Todo en un solo lugar.</p>
+    </footer>
+</body>
+</html>
